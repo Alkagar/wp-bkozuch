@@ -1,8 +1,17 @@
 <?php
-if(!isset($_GET['lang'])) {
-    //header('location: '.get_home_url());
-    //die();
-}
+    function my_login_redirect( $redirect_to, $request, $user ){
+        //is there a user to check?
+        if( is_array( $user->roles ) ) {
+            //check for admins
+            if( in_array( "administrator", $user->roles ) ) {
+                // redirect them to the default place
+                return '/wp-admin'; 
+            } else {
+                return home_url();
+            }
+        }
+    }
+    add_filter("login_redirect", "my_login_redirect", 10, 3);
 
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
