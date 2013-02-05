@@ -1,0 +1,39 @@
+Instrukcja korzystania z systemu WordPress
+==========================================
+
+System WordPress jest bardzo intuicyjny i dzięki panelowi administracyjnemu można w łatwy sposób zarządzać większością jego funkcji. Aby zalogować się do panelu należy otworzyć w przeglądarce link:
+
++ [http://kozuch.info/wp-admin](http://kozuch.info/wp-admin)
+
+i użyć nazwy użytkownika i hasła przesłanego w odrębnym mailu. Poniżej omówione są poszczególne, najważniejsze elementy niezbędne podczas codziennej administracji stroną internetową.
+
+Dodawanie nowych stron lub wpisów na blogu
+------------------------------------------
+
+System WordPress pozwala na dodawanie dwóch typów tekstów:
+
++ _wpisów_ 
+
+	opis wpisów
+
++ stron
+
+	Opis stron
+
+### Dodawanie multimediów (obrazki, dokumenty tekstowe)
+
+
+Tłumaczenie wpisów na wiele języków
+-----------------------------------
+
+Zabezpieczanie materiałów dla wybranych grup użytkowników
+---------------------------------------------------------
+
+### Dodawanie nowych użytkowników
+
+### Dodawanie nowych uprawnień
+
+### Wybór dozwolonej grupy podczas edytowania strony/wpisu
+
+Dodawanie nowej pozycji do menu
+-------------------------------

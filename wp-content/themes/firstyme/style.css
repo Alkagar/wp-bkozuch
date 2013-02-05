@@ -1,0 +1,327 @@
+/*
+Theme Name:		Firstyme
+Description:	Firstyme is a stylish, RESPONSIVE, customizable, simple, lightweight, and readable WordPress Theme. 
+Theme URI: 		http://charlieasemota.net/portfolio/firstyme/
+Author:			Charlie Asemota (.net)
+Author URI:		http://charlieasemota.net
+Version:		1.4.1
+Tags:			black, blue, brown, gray, green, orange, pink, purple, red, white, yellow, light, three-columns, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, theme-options, editor-style, featured-images, sticky-post, translation-ready
+
+License:		GNU General Public License v2.0
+License URI:	http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Fonts import (this is CSS3 - it will work only on modern browsers) */
+
+/* Blog name font */ @import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
+/* Titles font */ @import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed); 
+/* content font */ @import url(http://fonts.googleapis.com/css?family=Alegreya:400italic,400); 
+
+/* CSS Reset style (modify this section only if you know what your doing) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } :focus { outline: 0; } ins { text-decoration: none; } del { text-decoration: line-through; } table { border-collapse: collapse; border-spacing: 0; }
+
+/* General styles */
+body {
+	font-family: Alegreya, Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Ubuntu Condensed', Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	}
+h1 {font-size:24px;} h2 {font-size:20px;} h3 {font-size:18px;}
+small {
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	display:block;
+	}
+a {
+	text-decoration:none;
+	}
+a:hover {text-decoration:underline;}
+b, strong {font-weight:normal;}
+hr {
+	width:75%;
+	margin:20px auto;
+	clear:both;
+	border:none;
+	height:1px;
+	background:#999;
+	}
+blockquote {
+	padding:1px 20px 20px;
+	font-style:italic;
+	font-size:18px;
+	}
+input[type="text"], input[type="password"], textarea {
+	border:none;
+	color:#fff;
+	padding:10px;
+	display:block;
+	}
+input[type="submit"], button {
+	padding:10px;
+	border:none;
+	text-transform:uppercase;
+	cursor:pointer;
+	}
+table {width:100%;}
+td, th {padding:10px;} .left_col td, .left_col th {padding:5px;}
+th {
+	font-size:18px; 
+	font-weight:normal;
+	}
+
+.left_col input[type="text"], .left_col input[type="password"], .left_col textarea {width:180px;}
+div img, div object, div embed {max-width:100% !important; height:auto;}
+div iframe {max-width:100% !important;}
+img, p, ul, ol, blockquote, pre, table {margin-top:20px;}
+.content ul ul, .comment_content ul ul, .left_col ul ul {margin-top:0; margin-left:20px; list-style-type:circle;}
+
+.clear {clear:both;}
+.n {display:none}
+#page_end {height:20px;}
+
+/* Layout config */
+.site_container {
+	width:960px; 
+	margin:0 auto;
+	}
+.index-wrapper {float:left; width:700px;}
+.left_col {
+	width:240px;
+	float:left;
+	margin-right:20px;
+	}
+.center_col {
+	width:540px;
+	float:left;
+	margin-right:20px;
+	}
+.right_col {
+	width:140px;
+	float:left;
+	margin-top:30px;
+	position:relative;
+	}
+.block {
+	padding:20px;
+	display:block;
+	}
+.block_dec_line {
+	width:90%;
+	margin:20px auto 0;
+	height:10px;
+	}
+.content {line-height:19px;}
+	
+/* Logo */
+#logo.block {
+	color:#fff;
+	text-align:center;
+	}
+#logo.block_dec_line {margin-top:0;}
+#logo.block img {margin:0;}
+#logo h1 {
+	font-family:'Kaushan Script', cursive;
+	font-size:27px;
+	}
+#logo a {color:#fff;}
+#logo a:hover {text-decoration:none;}
+
+/* header image */
+.header_img {width:700px;}
+.header_img img {
+	width:700px;
+	height:250px;
+	margin:0;
+	}
+
+/* navigation menu */
+#nav ul {
+	margin:0; 
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	position:relative;
+	}
+#nav ul li a {
+	display:block;
+	min-height:20px;
+	line-height:20px;
+	padding-left:5px;
+	margin-bottom:5px;
+	}
+#nav ul ul {display:none;}
+#nav ul li:hover > ul {display:block; margin-left:10px;}
+#nav ul ul a {border-left:none !important;}
+
+/* Content */
+.content ul, .comment_content ul {
+	list-style-type: circle;
+	padding-left:20px;
+	}
+.content ol, .comment_content ol {
+	list-style-type: decimal;
+	padding-left:20px;
+	}
+.content h1, .content h2, .content h3 {margin-top:20px;}
+.content embed {height:350px; width:100%;}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
+	}
+.alignleft {
+	float:left;
+	margin-right:20px;
+	text-align:left;
+	}
+.alignright {
+	float:right;
+	margin-left:20px;
+	text-align:right;
+	}
+.wp-caption {
+	line-height: 18px;
+	margin-top: 20px;
+	max-width: 460px !important;
+	padding: 20px;
+	text-align: center;
+	font-weight: bold;
+	}
+.wp-caption img {
+	margin:0;
+	}
+.wp-caption-text {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	}
+.gallery-caption {
+	font-style:italic;;
+	}
+.sticky .block {background:#FF9;}
+
+/* Comments */
+.f_comment { margin-bottom:10px;}
+.comment_meta {
+	width:135px; 
+	margin-right:20px; 
+	float:left; 
+	line-height:21px; 
+	padding-top:18px;
+	}
+.comment_content {
+	width:345px; 
+	float:left;
+	}
+ul.children .comment_meta {width: 110px;} ul.children .bypostauthor {width:475px;}
+ul.children ul.children .comment_meta {width: 85px;} ul.children ul.children .bypostauthor {width:450px;}
+#respond textarea {width:480px;}
+#comments_form .block * {margin-top:20px;}
+.bypostauthor { 
+	width:500px;
+	margin-left:-20px;
+	padding:0 20px 10px;
+	}
+
+/* Page Navigation */
+#page_nav_up a {
+	background:url(img/up.png);
+	display:block;
+	width:80px;
+	height:80px;
+	margin:20px auto;
+	text-indent:-9999px;
+	}
+#page_nav_down a {
+	background:url(img/down.png);
+	display:block;
+	width:80px;
+	height:80px;
+	margin:20px auto;
+	text-indent:-9999px;
+	}
+#post_nav_links {
+	width:180px;
+	margin:20px auto 0;
+	}
+#page_nav_left a {
+	background:url(img/left.png);
+	display:block;
+	width:80px;
+	float:left;
+	height:80px;
+	text-indent:-9999px;
+	}
+	#page_nav_right a {
+	background:url(img/right.png);
+	display:block;
+	width:80px;
+	float:left;
+	height:80px;
+	margin-left:20px;
+	text-indent:-9999px;
+	}
+#page_nav_up a:hover, #page_nav_down a:hover, #page_nav_left a:hover, #page_nav_right a:hover { opacity:0.5;}
+.resp_menu {display:none;}
+
+/* ---------------------------------------------------
+Responsive
+--------------------------------------------------- */
+@media screen and (max-width:980px){
+    .site_container {width:700px; margin:0 auto; position:relative;}
+	.left_col .block, .left_col .block_dec_line {display:none;}
+	.left_col #logo {display:block;}
+	.block_dec_line#logo {margin-bottom:20px;}
+	.left_col {width:700px; margin:0; float: none;}
+	.left_col p.in_full {display:none;}
+	
+	.w300px {width:300px; margin:0 10px; float:left;}
+	
+	.testimonials .terzo {display:none;}
+    }
+
+@media screen and (max-width:720px){
+	
+	.right_col {display:none;}
+    .resp_menu {display:block;}
+	#sel a {color:#fff; text-align:center; padding:10px; margin-bottom:20px; text-transform:uppercase; display:block}
+	#menu {display:none; position:fixed; width:100%; height:100%; z-index:900000; top:0; background:#fff;}
+	.site_container {width:80%; margin:0 auto; position:relative;}
+	.index-wrapper {width:100%}
+	.center_col {width:100%; margin:0; float: none;}
+	.left_col {width:100%; margin:0; float: none;}
+	.header_img, .header_img img {width:100%; height:auto;}
+	.w300px {width:300px; margin:0 10px; float:left;}
+	
+	header blockquote {display:none;}
+	
+	.testimonials .terzo {display:none;}
+	
+	.resp_menu ul {
+		margin:0; 
+		padding-left:20px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		position:relative;
+		text-transform:uppercase;
+		list-style-type:square;
+		}
+	.resp_menu ul li a {
+		display:block;
+		padding:10px;
+		margin-bottom:5px;
+		font-weight:bold;
+		color:#333;
+		
+		}
+	.resp_menu ul li ul {display:block; margin-left:10px; list-style-type:none;}
+	.resp_menu ul ul a {border-left:none !important;}
+
+    }
+	
+	@media screen and (max-width:350px){
+		div iframe {height:auto;}
+		}

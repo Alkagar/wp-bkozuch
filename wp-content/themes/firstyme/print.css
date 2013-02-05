@@ -1,0 +1,198 @@
+
+/* Print */
+
+/* CSS Reset style (modify this section only if you know what your doing) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } :focus { outline: 0; } ins { text-decoration: none; } del { text-decoration: line-through; } table { border-collapse: collapse; border-spacing: 0; }
+
+/* General styles */
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	}
+h1 {font-size:24px;} h2 {font-size:20px;} h3 {font-size:18px;}
+small {
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	display:block;
+	}
+a {
+	text-decoration:none;
+	}
+a:hover {text-decoration:underline;}
+b, strong {font-weight:normal;}
+hr {
+	width:75%;
+	margin:20px auto;
+	clear:both;
+	border:none;
+	height:1px;
+	background:#999;
+	}
+blockquote {
+	padding:1px 20px 20px;
+	font-style:italic;
+	font-size:18px;
+	}
+input[type="text"], input[type="password"], textarea {
+	border:none;
+	color:#fff;
+	padding:10px;
+	display:block;
+	}
+input[type="submit"], button {
+	padding:10px;
+	border:none;
+	text-transform:uppercase;
+	cursor:pointer;
+	}
+table {width:100%;}
+td, th {padding:10px;} .left_col td, .left_col th {padding:5px;}
+th {
+	font-size:18px; 
+	font-weight:normal;
+	}
+
+.left_col input[type="text"], .left_col input[type="password"], .left_col textarea {width:180px;}
+div img, div object, div embed {max-width:100% !important; height:auto;}
+div iframe {max-width:100% !important;}
+img, p, ul, ol, blockquote, pre, table {margin-top:20px;}
+.content ul ul, .comment_content ul ul, .left_col ul ul {margin-top:0; margin-left:20px; list-style-type:circle;}
+
+.clear {clear:both;}
+.n {display:none}
+#page_end {height:20px;}
+
+/* Layout config */
+.site_container {
+	width:100%;
+	}
+.index-wrapper {float:left; width:700px;}
+.left_col {
+	display:none;
+	}
+.center_col {
+	width:100%;
+	float:left;
+	margin-right:20px;
+	}
+.right_col {
+	display:none;
+	}
+.block {
+	padding:20px;
+	display:block;
+	}
+.block_dec_line {
+	width:90%;
+	margin:20px auto 0;
+	height:10px;
+	}
+.content {line-height:19px;}
+	
+/* header image */
+.header_img {width:700px;}
+.header_img img {
+	width:700px;
+	height:250px;
+	margin:0;
+	}
+
+/* Content */
+.content ul, .comment_content ul {
+	list-style-type: circle;
+	padding-left:20px;
+	}
+.content ol, .comment_content ol {
+	list-style-type: decimal;
+	padding-left:20px;
+	}
+.content h1, .content h2, .content h3 {margin-top:20px;}
+.content embed {height:350px; width:100%;}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
+	}
+.alignleft {
+	float:left;
+	margin-right:20px;
+	text-align:left;
+	}
+.alignright {
+	float:right;
+	margin-left:20px;
+	text-align:right;
+	}
+.wp-caption {
+	line-height: 18px;
+	margin-top: 20px;
+	max-width: 460px !important;
+	padding: 20px;
+	text-align: center;
+	font-weight: bold;
+	}
+.wp-caption img {
+	margin:0;
+	}
+.wp-caption-text {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	}
+.gallery-caption {
+	font-style:italic;;
+	}
+.sticky .block {background:#FF9;}
+
+/* Comments */
+.f_comment { margin-bottom:10px;}
+.comment_meta {
+	width:135px; 
+	margin-right:20px; 
+	float:left; 
+	line-height:21px; 
+	padding-top:18px;
+	}
+.comment_content {
+	width:345px; 
+	float:left;
+	}
+ul.children .comment_meta {width: 110px;} ul.children .bypostauthor {width:475px;}
+ul.children ul.children .comment_meta {width: 85px;} ul.children ul.children .bypostauthor {width:450px;}
+#respond textarea {width:480px;}
+#comments_form .block * {margin-top:20px;}
+.bypostauthor { 
+	width:500px;
+	margin-left:-20px;
+	padding:0 20px 10px;
+	}
+
+/* Page Navigation */
+#page_nav_up a {
+	background:url(img/up.png);
+	display:block;
+	width:80px;
+	height:80px;
+	margin:20px auto;
+	text-indent:-9999px;
+	}
+#page_nav_down a {
+	background:url(img/down.png);
+	display:block;
+	width:80px;
+	height:80px;
+	margin:20px auto;
+	text-indent:-9999px;
+	}
+#post_nav_links {
+	width:180px;
+	margin:20px auto 0;
+	}
+#page_nav_left a, #page_nav_right a {
+	display:none;
+	}
+	
