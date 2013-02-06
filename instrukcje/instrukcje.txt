@@ -12,19 +12,36 @@ Dodawanie nowych stron lub wpisów na blogu
 
 System WordPress pozwala na dodawanie dwóch typów tekstów:
 
-+ _wpisów_ 
++ __wpisów__
 
-	opis wpisów
+	Są to standardowe wpisy na blogu opisujące aktualne wydarzenia. 
 
-+ stron
+	W Pani przypadku można je traktować jako nowości, aktualności dotyczące Pani kariery naukowej, informacje o egzaminach lub wymaganiach następne zajęcia itp. 
 
-	Opis stron
++ __stron__
+
+	Są to statyczne treści, które pozostają zawsze w tym samym miejscu - bez względu na upływający czas zawsze znajdują się w danym menu i dostępne są pod tym samym adresem. Nie wyklucza to możliwości edytowania ich.
+
+	W Pani przypadku można je wykorzystać jako strony z informacjami 'O mnie', 'Publikacje', 'Przedmioty', 'Materiały na konkretne przedmioty' itd.
+
+### Dodawanie nowych tekstów
+
+Obydwa rodzaje tekstów dodaje się poprzez wybranie z menu z lewej strony zakładki wpisy lub strony (odpowiednio). Po jej kliknięciu pokazuje się lista wszystkich utworzonych wpisów i stron oraz po lewej stronie rozwija się dodatkowa lista możliwości dotycząca wybranej zakładki. W obydwu przypadkach pojawia się tam opcja _'dodaj nowy'_. Po jej wybraniu pojawi się formularz dodawania nowych tekstów. Tutaj właśnie wpisuje się ich treść.
+
+### Tłumaczenie wpisów na wiele języków
+
+W formularzu powinny pojawić się dwa pola z tytułem (polski i angielski) oraz duże pole tekstowe w którym można wpisać treść. W górnej części pola tekstowego znajdują się zakładki pozwalające na przełączanie pomiędzy językami. W odpowiednich zakładkach należy wpisać odpowiednie wersje językowe.
+
+Jeśli nie uzupełni się jakiej z wersji językowych (dowolnej) wtedy na stronie będzie wyświetlany komunikat informujący o braku tłumaczenia na dany język oraz informacja o tym w jakim języku ten tekst jest dostępny wraz z linkiem do tekstu w danym języku.
+
 
 ### Dodawanie multimediów (obrazki, dokumenty tekstowe)
 
+System WordPress pozwala także w łatwy sposób zarządzać materiałami multimedialnymi. Podczas dodawania nowego wpisu należy wybrać opcję _'dodaj medium'_ znajdującą się powyżej dużego pola tekstowego, w którym wprowadza się treść strony. 
 
-Tłumaczenie wpisów na wiele języków
------------------------------------
+Spowoduje to otworzenie się okna w którym użytkownik dostanie możliwość importu nowych obrazków, plików _PDF_ lub _docx_. Należy wtedy wybrać opcję _'dodaj pliki'_ umieszczoną pod nagłówkiem _'Wstaw media'_ a następnie nacisnąć przycisk _'Wybierz pliki'_. Te akcje powinny wywołać otworzenie okienka w którym będzie można wskazać który plik ma zostać zaimportowany do systemu. 
+
+Po wysłaniu element powinien pokazywać się w liście dostępnych plików. Wtedy wystarczy go zaznaczyć (tak aby został podświetlony niebieskim obramowaniem) i kliknąć na _'wstaw do wpisu'_. Obrazek od teraz będzie pojawiał się w wprowadzonym wpisie. Od teraz będzie też dostępny w bibliotece multimediów, tak więc będzie można go wykorzystać w innym miejscu strony (inny wpis lub strona).
 
 Zabezpieczanie materiałów dla wybranych grup użytkowników
 ---------------------------------------------------------
