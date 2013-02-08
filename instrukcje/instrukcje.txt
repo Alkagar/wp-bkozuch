@@ -16,7 +16,7 @@ System WordPress pozwala na dodawanie dwóch typów tekstów:
 
 	Są to standardowe wpisy na blogu opisujące aktualne wydarzenia. 
 
-	W Pani przypadku można je traktować jako nowości, aktualności dotyczące Pani kariery naukowej, informacje o egzaminach lub wymaganiach następne zajęcia itp. 
+	W Pani przypadku można je traktować jako nowości, aktualności dotyczące Pani kariery naukowej, informacje o egzaminach lub wymaganiach na następne zajęcia itp. 
 
 + __stron__
 
@@ -46,11 +46,55 @@ Po wysłaniu element powinien pokazywać się w liście dostępnych plików. Wte
 Zabezpieczanie materiałów dla wybranych grup użytkowników
 ---------------------------------------------------------
 
+Podczas dodawania wpisu po prawej stronie znajduje się tabelka o nazwie _'access restriction'_ w której aktualnie znajdują się kilka tymczasowo utworzonych grup. Aby wyświetlać daną stronę tylko dla wybranych grup użytkowników należy przed jej zapisem wybrać w niej odpowiednią grupę użytkowników. Można także wybrać kilka na raz, wtedy wszyscy użytkownicy będący w jednej lub w drugiej grupie będą mieli dostęp do tworzonej strony.  
+
 ### Dodawanie nowych użytkowników
+
+Aby użytkownicy mogli się zalogować należy utworzyć im indywidualne konta (jedno konto może być współdzielone przez wiele osób, np. jedną grupę lub słuchaczy na jednym z przedmiotów).
+
+Dodawać konta można po wybraniu z menu z lewej strony opcji _'użytkownicy'_ &raquo; _'dodaj nowego'_. Wymaganymi polami przy tworzeniu użytkownika są:
+
++ __nazwa__ - jednoznacznie identyfikująca użytkownika,
++ __email__ - nie koniecznie musi być to prawdziwy adres email ale musi mieć format simple@example.com,
++ __hasło__ - hasło dla użytkownika,
++ __wysyłanie hasła__ - jeśli podaje Pani nieistniejący adres proszę nie zaznaczać tego pola,
++ __rola__ - w roli przy zakładaniu kont dla Pani studentów proszę zawsze zaznaczać opcję _'subskrybent'_,
+
+Po utworzeniu użytkownika należy go później odpowiednio skonfigurować. Należy:
+
++ usunąć jego rolę:
+
+    W menu po lewej stronie _'użytkownicy'_ &raquo; _'wszyscy użytkownicy'_ należy najechać na nazwę użytkowika a później na opcję _'edytuj'_, która automatycznie pojawi się pod kursorem po najechaniu myszką na nazwę użytkownika. Następnie należy odnaleźć opcję _'rola'_ i wybrać _'brak roli na tej witrynie'_. Teraz należy zapisać formularz przyciskiem _'zaktualizuj konto użytkownika'_, który znajduje się na samym dole strony.
+
++ dodać użytkownika do odpowiedniej grupy:
+
+    W menu po lewej stronie _'użytkownicy'_ &raquo; _'wszyscy użytkownicy'_ należy zaznaczyć checkbox znajdujący się na lewo od nazwy użytkownika i w rozwijanej liście znajdującej się nad listą użytkowników oznaczonej jako _'selected to / from group'_ wybrać nazwę grupy do której chcemy dodać (usunąć) zaznaczonego użytkownika. Następnie należy kliknąć odpowiedni przycisk znajdujący się na lewo od rozwijanego menu _'add'_ lub _'remove'_ w zależności czy chcemy dodać czy usunąć z wybranej przed chwilą grupy.
 
 ### Dodawanie nowych uprawnień
 
-### Wybór dozwolonej grupy podczas edytowania strony/wpisu
+Aby łatwo rozróżnić którzy użytkownicy mogą przeglądać wybrane materiały należy utworzyć uprawnienia opisujące w zrozumiały sposób ich prawa dostępu. Definicję uprawnień wykonuje się w menu z lewej strony _'groups'_ &raquo; _'capabilities'_ &raquo; _'new capability'_. W tym formularzu jedynym wymaganym polem jest nazwa uprawnienia _'capability'_. Nazwa ta powinna jednoznacznie wskazywać do których materiałów użykownicy będą mieli dostęp ponieważ od tej pory tylko nią będziemy się posługiwać. 
+
+Zalecałbym tworzenie nazw uprawnień z wybranym wcześniej prefiksem np: 
+
++ read\_access\_grupa\_pierwsza
++ read\_access\_grupa\_druga
+
+Dzięki takiemu nazewnictwu we wszystkich listach grupy te będą wyświetlane koło siebie i łatwo będzie je odnaleźć. Formularz zapisujemy klikając na przycisk _'add'_.
+
+Aby dodane właśnie uprawnienia pojawiały się na liście możliwych do wyboru przy tworzeniu nowego wpisu należy je aktywować. operację tą robi się w menu: _'groups'_ &raquo; _'options'_ w sekcji _'capabilities'_. Należy tam zaznaczyć checkbox przy każdym z uprawnień które chcemy mieć możliwość wybierać przy tworzeniu wpisów. Dzięki wspólnemu prefiksowi powinny wyświetlać się tutaj jeden pod drugim. Zapisujemy formularz przyciskiem _'save'_.
+
+Ostatnią częścią konfiguracji pozalającej na przypisywanie uprawnień jest dodanie grupy i skojarzenie z nią odpowiedniego uprawnienia. Operację tą wykonuje się w menu _'groups'_ &raquo; _'groups'_. Tam należy kliknąć przycisk _'new group'_. Jedynym obowiązkowym polem jest nazwa grupy oznaczona jako pole _'name'_. Należy ją wypełnić tak aby jednoznacznie mówiła do czego dana grupa powinna mieć dostęp. Następnie należy zapisać formularz przyciskiem _'add'_.
+
+Od tej pory na liście grup (_'groups'_ &raquo; _'groups'_) pojawia się nowo utworzona grupa. Teraz należy przypisać do niej utworzone przed chwilą uprawnienie. Należy zaznaczyć checkbox znajdująćy się na lewo od nazwy grupy i z rozwijanego menu nad tabelą z grupami wybrać uprawnienie które chcemy dodać do zaznaczonej grupy. Jeśli użyto zalecanego prefisku 'read_access_' wszystkie utworzone uprawnienia powinny znajdować się koło siebie w rozwiniętej liście. Następnie należy kliknąć _'add'_.
+
+Następnie należy przypisać użytkowników do grup (temat opisany w sekcji powyżej).
+
+Po wykonaniu powyższych operacji została utworzona grupa posiadająca przypisane jej uprawnienia, dająca możliwość wszystkim użytkownikom do niej przypisanym na przeglądanie materiałów które zostały zastrzeżone tylko dla użytkowników posiadających wybrane uprawnienia.
+
 
 Dodawanie nowej pozycji do menu
 -------------------------------
+
+Aby dodać nową pozycję do menu należy pierwsze utworzyć stronę do której nowa pozycja w menu powinna kierować. Dodanie strony opisane zostało w punkcie powyżej.
+
+Następnie należy w menu po lewej stronie odnaleźć _'wygląd'_ &raquo; _'menu'_. Po prawej stronie znajduje się aktualne menu _'menu główne'_. Można zobaczyć jakie elementy znajdują się tam w tym momencie. Aby dodać nowy element należy zaznaczyć go z listy w panelu _'strony'_ i kliknąć przycisk _'dodaj do menu'_. Następnie należy przycisnąć przycisk _'zapisz menu'_. Od tej pory nowy element będzie pojawiał się w menu na stronie.
