@@ -22,14 +22,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* General styles */
 body {
-	font-family: Alegreya, Georgia, "Times New Roman", Times, serif;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size:16px;
 	}
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Ubuntu Condensed', Arial, Helvetica, sans-serif;
+	font-family:  Arial, Helvetica, sans-serif;
 	font-weight:normal;
 	}
-h1 {font-size:24px;} h2 {font-size:20px;} h3 {font-size:18px;}
+h1 {font-size:24px;} h2 {font-size:21px;} h3 {font-size:19px;}
 small {
 	font-size:11px;
 	font-family:Arial, Helvetica, sans-serif;
