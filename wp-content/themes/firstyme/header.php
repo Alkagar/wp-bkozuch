@@ -36,11 +36,11 @@
                 </div>
             </div>
             <div class="block_dec_line" id="logo"></div>
-            <?php if (is_front_page()) : ?>
-            <section class="left_col">
-                <img src='<?php echo get_template_directory_uri();?>/img/zdjecie.jpg' width="180" alt='Barbara Kożuch' />
-                <?php //get_sidebar(); ?>
-            </section>
-            <?php endif; ?>
             
-            <div id='ddd' class="index-wrapper">
+            <div class="index-wrapper">
+                <?php if (is_front_page()) : ?>
+                <section class="left_col">
+                    <img src='<?php echo get_template_directory_uri();?>/img/zdjecie.jpg' width="180" alt='Barbara Kożuch' />
+                    <?php //get_sidebar(); ?>
+                </section>
+                <?php endif; ?>
