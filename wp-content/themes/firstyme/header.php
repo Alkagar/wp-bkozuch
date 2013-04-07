@@ -43,3 +43,7 @@
 		<!-- /left_col -->
 		
 		<div class="index-wrapper">
+			<div style='float:right; margin-right:-45px; margin-top:-18px;'>
+				<a href='/en' title='en'><img src='/wp-content/plugins/qtranslate/flags/gb.png' alt='en' /></a>
+				<a href='/' title='pl'><img src='/wp-content/plugins/qtranslate/flags/pl.png' alt='pl' /></a>
+			</div>
