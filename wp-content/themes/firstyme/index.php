@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 	
-		<?php if ( is_front_page() && !is_paged() && get_header_image() ) :?>
+		<?php if (false && is_front_page() && !is_paged() && get_header_image() ) :?>
 		<div class="header_img">
 			<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" title=""/>
 		</div>
 		<?php endif; ?>
 		
-		<section class="center_col" id="posts">
+                <section style='<?php echo is_front_page() ? '': 'width:780px;';?>' class="center_col" id="posts">
 			
 			<div id="page_nav_up">
 				<?php previous_posts_link(); ?> 

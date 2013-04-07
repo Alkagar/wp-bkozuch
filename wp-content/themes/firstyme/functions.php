@@ -218,6 +218,7 @@ function firstyme_content_display() {
 	else {the_excerpt();}
 	}
 function firstyme_menu_position() {
+        return '';
 	of_get_option('nav_position', 'one');
 	if(of_get_option('nav_position', 'one') == "one") return "fixed";
 	else return "absolute";

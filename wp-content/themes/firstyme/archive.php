@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-		<section class="center_col" id="posts">
+<section style='<?php echo is_front_page() ? '': 'width:780px;';?>' class="center_col" id="posts">
 		
 			<div class="block" id="logo">
 				<h3>
