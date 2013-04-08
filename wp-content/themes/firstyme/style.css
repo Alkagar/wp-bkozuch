@@ -120,7 +120,7 @@ img, p, ul, ol, blockquote, pre, table {margin-top:20px;}
         height:60px;
 	text-align:center;
 	}
-#logo.block_dec_line { margin-left:40px; margin-top:0; margin-bottom:10px;}
+#logo.block_dec_line { margin:0px 0px 0px 20px; width:960px; }
 #logo.block img {margin:0;}
 #logo h1 {
         margin-top:15px;
@@ -273,7 +273,7 @@ Responsive
 --------------------------------------------------- */
 @media screen and (max-width:980px){
     .site_container {width:700px; margin:0 auto; position:relative;}
-	.left_col .block, .left_col .block_dec_line {display:none;}
+	.left_col .block, .left_col .block_dec_line_ {display:none;}
 	.left_col #logo {display:block;}
 	.block_dec_line#logo {margin-bottom:20px;}
 	.left_col {}
