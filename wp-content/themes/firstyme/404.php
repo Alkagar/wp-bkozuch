@@ -3,15 +3,23 @@
 		<section class="center_col" id="posts">
 			
 			
-			<article id="post">
+			<article id="post" style="width:780px;">
 				<div class="block_dec_line"></div>
 				<div class="block">
 				
 					<div class="content">
-						<h1><?php _e('Error 404', 'firstyme'); ?></h1>
-						<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help.', 'fistyme' ); ?></p>
-						<br>
-						<?php get_search_form(); ?>
+<?php 
+
+$noPageId = 178;
+$post = get_post($noPageId);
+$content = $post->post_content;
+$title = $post->post_title;
+?>
+
+
+						<h1><?php _e($title); ?></h1>
+						<p><?php _e($content); ?></p>
+						<?php //get_search_form(); ?>
 						<hr>
 						<?php the_widget( 'WP_Widget_Recent_Posts', array( 'number' => 10 ), array( 'widget_id' => '404' ) ); ?>
 						

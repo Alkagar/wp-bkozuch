@@ -16,7 +16,7 @@
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<div class="block_dec_line"></div>
 				<div class="block">
-					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" id="title"><h1><?php the_title(); ?></h1></a>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><h1><?php the_title(); ?></h1></a>
 					<small><?php fistyme_home_post_info_top(); ?></small>
 				
 					<div class="content">
