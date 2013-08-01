@@ -23,7 +23,7 @@
 						<?php if ( has_post_thumbnail() ) { the_post_thumbnail();} ?>
 						<?php firstyme_content_display(); ?>
 						<?php if( get_the_title() == ""){?>
-							<p><small><a href="<?php the_permalink()?>" title="<?php the_title_attribute(); ?>"><?php _e('Go to the post &rsaquo;', 'firstyme'); ?></a></small></p>
+							<!-- / <p><small><a href="<?php the_permalink()?>" title="<?php the_title_attribute(); ?>"><?php _e('Go to the post &rsaquo;', 'firstyme'); ?></a></small></p> -->
 						<?php }?>
 					</div>
 					<!-- /content -->
@@ -36,7 +36,7 @@
 			</article>
 			<!-- /article -->
 			<?php endwhile; else: ?>
-				<p><?php _e('Sorry, no posts on this blog yet.', 'firstyme'); ?></p>
+			<!-- / <p><?php _e('Sorry, no posts on this blog yet.', 'firstyme'); ?></p>  -->
 			<?php endif; ?>
 			
 			

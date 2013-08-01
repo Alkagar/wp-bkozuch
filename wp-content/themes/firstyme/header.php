@@ -21,6 +21,7 @@
         <div class="site_container">
 
             <div class="block" id="logo">
+		<img src='/wp-content/themes/firstyme/img/uj.png' style="float:left; height:81px;width:51px; margin-top:-10px;" />
                 <a href="<?php echo home_url(); ?>">
                     <?php 
                         if( of_get_option('upload_logo') != '') {echo '<img src="' , of_get_option('upload_logo') , '" alt="">';}

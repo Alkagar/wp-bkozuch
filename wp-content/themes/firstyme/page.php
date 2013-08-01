@@ -7,6 +7,7 @@
 				<div class="block_dec_line"></div>
 				<div class="block">
 					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" id="title"><h1><?php the_title(); ?></h1></a>
+<br />
 				
 					<div class="content">
 						<?php if ( has_post_thumbnail() ) { the_post_thumbnail();} ?>

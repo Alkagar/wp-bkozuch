@@ -17,11 +17,11 @@ $title = $post->post_title;
 ?>
 
 
-						<h1><?php _e($title); ?></h1>
+						<h1><?php _e($title); ?></h1><br />
 						<p><?php _e($content); ?></p>
 						<?php //get_search_form(); ?>
 						<hr>
-						<?php the_widget( 'WP_Widget_Recent_Posts', array( 'number' => 10 ), array( 'widget_id' => '404' ) ); ?>
+						<!-- <?php the_widget( 'WP_Widget_Recent_Posts', array( 'number' => 10 ), array( 'widget_id' => '404' ) ); ?> -->
 						
 					</div>
 					<!-- /content -->
